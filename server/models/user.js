@@ -7,6 +7,8 @@ var User = mongoose.model('User',{
     trim: true,
     minlength: 1
   }
-},'User');// esta linea es para que la coleccion se cree con este nombre
+}/*,'User'*/);// esta linea es para que la coleccion se cree con este nombre->
+              // si no se coloca nada, mongoose creara la coleccion con el nombre en minuscula y en plural
+
 
 module.exports = {User};
